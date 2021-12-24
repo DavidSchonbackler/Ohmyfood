@@ -1,0 +1,76 @@
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .container-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .step_1_title {
+    font-size: 12px;
+  }
+  .fa-mobile-alt {
+    margin-left: 5px;
+  }
+  .title-span {
+    position: absolute;
+    left: 295px;
+  }
+
+  .containercard-block1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 12px;
+  }
+  .section_3 {
+    padding-bottom: 50px;
+  }
+  /* mobile_restaurant */
+  .container-card_sub2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+  }
+  .container-card_sub2__box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-width: 150px;
+  }
+  .card_sub_2 {
+    height: 64px;
+    align-content: center;
+    align-items: center;
+    width: 100%;
+    min-width: 150px;
+  }
+  .card_sub_2 h3 {
+    font-size: 13px;
+  }
+  .container-menu__description {
+    font-size: 13px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: width ease 0.7s;
+  }
+  .card_sub_2 .item_hover {
+    height: 64px;
+  }
+  .card_sub_2 .price {
+    font-size: 13px;
+  }
+  .card_sub_2:hover .item_hover {
+    width: 30px;
+  }
+  .card_sub_2:hover p {
+    width: calc(100% - 30px);
+  }
+  .card_sub_2 .fa-check-circle {
+    font-size: large;
+  }
+  .card {
+    height: 510px;
+  }
+}

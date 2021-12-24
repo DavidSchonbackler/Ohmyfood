@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+/* Global site */
+* {
+  box-sizing: border-box;
+}
+/* #bloc-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+} */
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Shrikhand", cursive;
+  font-family: "Roboto", sans-serif;
+}
+/* .content { */
+/* visibility: hidden; */
+/* animation: fadeIn 0.2s ease-in 2s; */
+/* animation-delay: 10s; */
+/* } */
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    visibility: visible;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.container-loader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  animation: fadeOut 2s ease-in-out 2s;
+  z-index: 1;
+  opacity: 0;
+  pointer-events: none;
+}
+.loader {
+  /*creation du loader*/
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #99e2d0;
+  border-bottom: 10px solid #99e2d0;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  animation: spin 2s linear 2s;
+}
+
+/*Animation du loader */
+
+@-webkit-keyframes spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+    opacity: 0;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* HEADER */
+h1 {
+  font-family: "shrikhand", cursive;
+  text-align: center;
+  box-shadow: 0 0 0.5rem rgb(0 0 0 / 25%);
+  margin: 0px;
+  padding: 0.5rem;
+}
+header {
+  position: relative;
+}
+/* MAIN */
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ececec;
+
+  height: 45px;
+  gap: 1rem;
+}
+.geo_icone {
+  width: 20px;
+  height: 20px;
+}
+.search p {
+  font-weight: bold;
+}
+
+/* SECTION_1 */
+.section_1 {
+  text-align: center;
+  background: #f6f6f6;
+  padding: 1rem;
+}
+.section_1 h2 {
+  font-size: 30px;
+  font-family: "roboto", sans-serif;
+}
+.section_1 p {
+  font-family: "roboto", sans-serif;
+  font-size: 15px;
+}
+.violet_button {
+  font-family: "roboto", sans-serif;
+  padding: 10px;
+  border-radius: 20px;
+  background-image: linear-gradient(
+    to top,
+    rgba(147, 86, 220, 0.9),
+    rgba(255, 121, 218, 0.9)
+  );
+  color: white;
+  font-weight: bold;
+  border: none;
+  box-shadow: 2px 1px 6px -3px #000000;
+  transition: transform 200ms, filter 200ms;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  filter: brightness(0.85);
+}
+.violet_button:hover {
+  transform: scale(1.02);
+  filter: brightness(1);
+}
+
+/* SECTION 2 */
+@media screen and (min-width: 992px) and (max-width: 1300px) {
+  .container-step {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+.section_2 {
+  margin-left: 40px;
+  margin-right: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.section_2 h2 {
+  margin-left: -25px;
+}
+
+.step {
+  display: flex;
+  justify-content: center;
+  padding: 1.5rem;
+  gap: 1rem;
+  background-color: #f6f6f6;
+  border-radius: 20px;
+  width: 100%;
+  margin-bottom: 1.5rem;
+  box-shadow: 1px 1px 3px -3px #000000;
+  align-items: center;
+  position: relative;
+}
+.step:hover {
+  cursor: pointer;
+  background: #9256dc27;
+}
+.step:hover .fas:before {
+  /* content: "\f05d"; */
+  color: #9356dc;
+}
+.step_1 {
+  background-color: #9356dc;
+  height: 20px;
+  width: 20px;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  left: 0;
+  transform: translate3d(-10px, 0, 0);
+  color: white;
+}
+.fas {
+  width: 15px;
+  height: 15px;
+}
+.fa-mobile-alt {
+  margin-left: 18px;
+}
+
+/* SECTION RESTAURANTS & CARTES */
+h4 {
+  font-weight: lighter;
+}
+
+.section_3 {
+  gap: 15px;
+  background: #f6f6f6;
+  padding-bottom: 30px;
+}
+.section_3 h2 {
+  margin-left: 15px;
+  padding-top: 40px;
+  margin-bottom: 10px;
+}
+.card_sub {
+  display: flex;
+  flex-direction: column;
+}
+.card_sub img {
+  object-fit: cover;
+}
+.container_card a {
+  text-decoration: none;
+  color: black;
+}
+
+.container_card {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding: 15px;
+}
+
+.restaurantmenu__presentation__title__like,
+.restaurants__figcaption__like {
+  position: relative;
+  width: 2rem;
+  /* margin: 0.3rem 0.5rem 0 0; */
+  cursor: pointer;
+  margin-right: 30px;
+  margin-top: -20px;
+}
+
+.restaurants__figcaption__like__emptyheart {
+  width: 1.5rem;
+  position: absolute;
+}
+
+.restaurants__figcaption__like__fullheart {
+  width: 1.5rem;
+  position: absolute;
+  opacity: 0;
+}
+
+.restaurants__figcaption__like__fullheart:hover {
+  opacity: 1;
+  transition: 400ms ease-in-out;
+}
+
+.containercard-block1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 270px;
+  display: flex;
+  flex-direction: column;
+}
+.card img {
+  height: 160px;
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+
+.card span {
+  width: 80px;
+  position: absolute;
+  right: 30px;
+  margin-top: 12px;
+  background: #99e2d0;
+  text-align: center;
+  padding: 7px;
+  border-radius: 5px;
+  color: #328f79;
+  font-weight: bold;
+}
+
+.card h3,
+h4 {
+  padding-left: 10px;
+}
+.card h4 {
+  margin-top: 3px;
+}
+h3 {
+  margin-bottom: 5px;
+}
+
+.container_card_sub {
+  position: relative;
+}
+.container_card_sub_text {
+  display: flex;
+  justify-content: space-between;
+}
