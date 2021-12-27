@@ -1,4 +1,4 @@
-@media screen and (min-width: 768px) and (max-width: 991px) {
+@media screen and (min-width: 768px) and (max-width: 1024px) {
   .container-step {
     display: flex;
     flex-direction: row;
@@ -44,16 +44,30 @@
     align-items: center;
     width: 100%;
     min-width: 150px;
+    animation-duration: 1.2s;
+    animation-timing-function: ease;
+    animation-name: slideIn;
+  }
+  @keyframes slideIn {
+    from {
+      transform: translate3d(0, 15px, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0);
+      opacity: 1;
+    }
   }
   .card_sub_2 h3 {
     font-size: 13px;
   }
   .container-menu__description {
-    font-size: 13px;
+    font-size: 12px;
     text-overflow: ellipsis;
     overflow: hidden;
     white-space: nowrap;
     transition: width ease 0.7s;
+    display: block;
   }
   .card_sub_2 .item_hover {
     height: 64px;
@@ -62,7 +76,7 @@
     font-size: 13px;
   }
   .card_sub_2:hover .item_hover {
-    width: 30px;
+    width: 70px;
   }
   .card_sub_2:hover p {
     width: calc(100% - 30px);
@@ -71,6 +85,6 @@
     font-size: large;
   }
   .card {
-    height: 510px;
+    max-height: 604px;
   }
 }

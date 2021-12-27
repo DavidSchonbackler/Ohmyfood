@@ -90,13 +90,14 @@ h4 {
   border-radius: 40px 40px 0 0;
   box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
   width: 100%;
-  height: 1300px;
+  height: 1200px;
   display: flex;
   flex-direction: column;
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f6f6f6;
 }
+
 .restaurantmenu__presentation__title__like,
 .restaurants__figcaption__like {
   position: relative;
@@ -163,6 +164,19 @@ h4 {
   height: 75px;
   position: relative;
   margin-bottom: 15px;
+  animation-duration: 1.2s;
+  animation-timing-function: ease;
+  animation-name: slideIn;
+}
+@keyframes slideIn {
+  from {
+    transform: translate3d(0, 15px, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0);
+    opacity: 1;
+  }
 }
 .card_sub_2 .price {
   position: relative;

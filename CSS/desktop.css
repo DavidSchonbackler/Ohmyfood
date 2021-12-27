@@ -1,7 +1,7 @@
-@media screen and (min-width: 992px) and (max-width: 1400px) {
+@media screen and (min-width: 1025px) {
   .container-step {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
     gap: 20px;
   }
