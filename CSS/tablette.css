@@ -13,8 +13,16 @@
   }
   .title-span {
     position: absolute;
-    left: 295px;
+    left: 300px;
   }
+  /* .title-span2 {
+    position: absolute;
+    left: 250px;
+  } */
+  /* .card span {
+    position: absolute
+    right: 30px;
+  } */
 
   .containercard-block1 {
     display: flex;
