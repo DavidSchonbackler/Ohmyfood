@@ -240,6 +240,7 @@ h4 {
   margin-top: 0px;
   font-weight: lighter;
   margin: 0;
+  display: block;
 }
 .card_sub_2 H3 {
   text-overflow: ellipsis;
