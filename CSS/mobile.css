@@ -306,7 +306,7 @@ h4 {
   border-radius: 10px 10px 0 0;
 }
 
-/* .card span {
+.card span {
   width: 80px;
   position: absolute;
   right: 30px;
@@ -317,7 +317,7 @@ h4 {
   border-radius: 5px;
   color: #328f79;
   font-weight: bold;
-} */
+}
 
 .card h3,
 h4 {
