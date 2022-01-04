@@ -13,7 +13,7 @@
   }
   .title-span {
     position: absolute;
-    left: 300px;
+    right: 15px;
   }
   /* .title-span2 {
     position: absolute;
@@ -29,6 +29,10 @@
     flex-direction: row;
     justify-content: space-between;
     gap: 12px;
+  }
+  .containercard-block1 .card {
+    width: calc(100% - (12px / 2));
+    position: relative;
   }
   .section_3 {
     padding-bottom: 50px;
