@@ -23,9 +23,13 @@
     justify-content: space-between;
     gap: 12px;
   }
+  .containercard-block1 .card {
+    width: calc(100% - (12px / 2));
+    position: relative;
+  }
   .title-span {
     position: absolute;
-    left: 620px;
+    right: 15px;
   }
   .card {
     max-height: 600px;
