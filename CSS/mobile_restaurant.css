@@ -174,7 +174,7 @@ h4 {
     opacity: 0;
   }
   to {
-    transform: translate3d(0);
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
@@ -247,7 +247,7 @@ h4 {
   overflow: hidden;
   white-space: nowrap;
   margin-top: 0px;
-  transition: with ease 0.7s;
+  transition: ease 0.7s;
 }
 .card_sub_2:hover h3 {
   width: calc(100% - 70px);
