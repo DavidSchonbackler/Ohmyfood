@@ -59,7 +59,7 @@ h4 {
 }
 
 /*  SECTION MENU & CARTES */
-#titre_sub_section_menu {
+.titre_sub_section_menu {
   font-weight: normal;
 }
 .title_underline {
@@ -291,6 +291,9 @@ h4 {
   justify-content: space-between;
 }
 .violet_button {
+  display: block;
+  margin: 0 auto;
+  margin-top: 40px
   font-family: "roboto", sans-serif;
   padding: 10px;
   border-radius: 20px;
