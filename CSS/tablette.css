@@ -19,10 +19,10 @@
     position: absolute;
     left: 250px;
   } */
-  /* .card span {
-    position: absolute
-    right: 30px;
-  } */
+
+  .card span {
+    right: 15px;
+  }
 
   .containercard-block1 {
     display: flex;
