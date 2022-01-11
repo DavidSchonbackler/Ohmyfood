@@ -2,15 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 /* Global site */
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
-/* #bloc-page {
+#bloc-page {
   max-width: 1300px;
   margin: 0 auto;
   padding-left: 15px;
   padding-right: 15px;
-} */
+}
 
 html,
 body {
@@ -59,7 +61,7 @@ body {
   position: fixed;
   width: 100%;
   height: 100%;
-  animation: fadeOut 2s ease-in-out 2s;
+  animation: fadeOut 2s ease-in-out;
   z-index: 1;
   opacity: 0;
   pointer-events: none;
@@ -72,7 +74,7 @@ body {
   border-radius: 50%;
   width: 100px;
   height: 100px;
-  animation: spin 2s linear 2s;
+  animation: spin 2s linear;
 }
 
 /*Animation du loader */
@@ -181,6 +183,10 @@ header {
   padding-top: 2rem;
   padding-bottom: 2rem;
 }
+.step_1_title {
+  font-size: 14px;
+}
+
 .section_2 h2 {
   margin-left: -25px;
 }
