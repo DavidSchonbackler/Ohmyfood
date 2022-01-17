@@ -4,10 +4,6 @@
 /* Global site */
 * {
   box-sizing: border-box;
-  max-width: 1300px;
-  margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 html,
 body {
